@@ -5,8 +5,8 @@
   --muted: #a6b2c2;
   --dim: #69758a;
   --line: rgba(244, 247, 251, 0.16);
-  --panel: rgba(14, 18, 24, 0.72);
-  --panel-strong: rgba(22, 28, 36, 0.88);
+  --panel: rgba(14, 18, 24, 0.62);
+  --panel-strong: rgba(14, 19, 27, 0.80);
   --cyan: #3dd9d6;
   --amber: #f2a93b;
   --green: #74d680;
@@ -133,6 +133,12 @@ body::after {
   gap: 6px;
 }
 
+.nav-actions {
+  justify-self: end;
+  display: flex;
+  gap: 6px;
+}
+
 .nav-links a,
 .nav-action {
   padding: 8px 10px;
@@ -150,7 +156,6 @@ body::after {
 }
 
 .nav-action {
-  justify-self: end;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -191,6 +196,7 @@ main {
 .contact-copy,
 .section-heading,
 .project-card,
+.education-card,
 .skill-band,
 .pipeline-step {
   min-width: 0;
@@ -304,7 +310,7 @@ main {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background:
-    linear-gradient(180deg, rgba(5, 5, 7, 0.50), rgba(5, 5, 7, 0.72)),
+    linear-gradient(180deg, rgba(5, 5, 7, 0.30), rgba(5, 5, 7, 0.46)),
     linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015));
 }
 
@@ -346,6 +352,7 @@ main {
 }
 
 .story-metrics div,
+.education-card,
 .skill-band,
 .pipeline-step {
   border: 1px solid rgba(255, 255, 255, 0.14);
@@ -359,6 +366,7 @@ main {
 }
 
 .story-metrics span,
+.education-card span,
 .skill-band span,
 .pipeline-step span,
 .project-code {
@@ -375,6 +383,7 @@ main {
   font-size: 1.35rem;
 }
 
+.education-section,
 .work-section,
 .systems-section,
 .skills-section,
@@ -389,7 +398,38 @@ main {
   position: absolute;
   inset: 0 -4vw;
   z-index: -1;
-  background: rgba(5, 5, 7, 0.72);
+  background:
+    linear-gradient(180deg, rgba(5, 5, 7, 0.42), rgba(5, 5, 7, 0.34)),
+    rgba(5, 5, 7, 0.20);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.education-card {
+  padding: 24px;
+  background: rgba(11, 16, 23, 0.68);
+  backdrop-filter: blur(18px);
+}
+
+.education-card h3 {
+  margin: 16px 0 10px;
+  font-size: 1.45rem;
+  line-height: 1.08;
+}
+
+.education-card p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.education-card strong {
+  color: var(--ink);
+  font-size: 0.98rem;
 }
 
 .project-grid {
@@ -444,7 +484,7 @@ main {
 .project-card:hover {
   transform: translateY(-6px);
   border-color: color-mix(in srgb, var(--accent) 50%, white 12%);
-  background: rgba(26, 31, 40, 0.92);
+  background: rgba(22, 28, 38, 0.86);
 }
 
 .project-card h3,
@@ -545,6 +585,7 @@ main {
   }
 
   .project-grid,
+  .education-grid,
   .pipeline {
     grid-template-columns: 1fr;
   }

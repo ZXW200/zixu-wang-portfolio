@@ -17,12 +17,16 @@
     <header class="site-header" aria-label="Primary">
       <a class="brand" href="#top" aria-label="Zixu Wang home">ZW</a>
       <nav class="nav-links" aria-label="Page navigation">
+        <a href="#education">Education</a>
         <a href="#work">Work</a>
         <a href="#systems">Systems</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="nav-action" href="CV_Zixu_Wang_updated.pdf">CV</a>
+      <div class="nav-actions">
+        <a class="nav-action" href="https://github.com/ZXW200">GitHub</a>
+        <a class="nav-action" href="CV_Zixu_Wang_updated.pdf">CV</a>
+      </div>
     </header>
 
     <main id="top">
@@ -31,10 +35,12 @@
           <p class="kicker reveal">MSc Artificial Intelligence</p>
           <h1 class="hero-title reveal">Zixu Wang</h1>
           <p class="hero-subtitle reveal">
-            Building explainable AI pipelines, multi-agent LLM simulations, and data-driven systems for medical AI and strategic reasoning.
+            MSc AI at Lancaster. I build explainable ML for medical diagnosis, turning model predictions into inspectable evidence.
+            Also: multi-agent LLM simulation and data-driven decision systems.
           </p>
           <div class="hero-actions reveal">
             <a class="button primary" href="#work">View Work</a>
+            <a class="button secondary" href="https://github.com/ZXW200">GitHub</a>
             <a class="button secondary" href="CV_Zixu_Wang_updated.pdf">Download CV</a>
           </div>
         </div>
@@ -80,6 +86,27 @@
         </div>
       </section>
 
+      <section id="education" class="education-section scene">
+        <div class="section-heading reveal">
+          <p class="kicker">Education</p>
+          <h2 class="section-title">Academic training in AI and computer science.</h2>
+        </div>
+        <div class="education-grid">
+          <article class="education-card reveal">
+            <span>2025-2026</span>
+            <h3>MSc Artificial Intelligence</h3>
+            <p>Lancaster University</p>
+            <strong>79.4% distinction average-to-date</strong>
+          </article>
+          <article class="education-card reveal">
+            <span>2021-2024</span>
+            <h3>BSc Computer Science (Hons)</h3>
+            <p>Aston University</p>
+            <strong>Second Class Honours, Lower Division</strong>
+          </article>
+        </div>
+      </section>
+
       <section id="work" class="work-section">
         <div class="section-heading reveal">
           <p class="kicker">Selected work</p>
@@ -88,10 +115,10 @@
 
         <div class="project-grid">
           <article class="project-card reveal" data-accent="cyan">
-            <span class="project-code">MSc Dissertation · 2026</span>
+            <span class="project-code">Dissertation in progress · 2026</span>
             <h3>Toward Explainable Face2Gene Diagnosis</h3>
             <p>
-              Developed a reproducible coarse-ROI AEV pipeline that converts occlusion-based model behaviour into quantitative ROI-level evidence for low-resolution facial images.
+              Building a reproducible coarse-ROI AEV pipeline so facial-diagnosis model behaviour can be inspected at region level instead of treated as a black-box score.
             </p>
             <ul>
               <li>NumPy MLP workflow on Face2Brain / PD-DBS face data</li>
@@ -101,49 +128,49 @@
           </article>
 
           <article class="project-card reveal" data-accent="amber">
-            <span class="project-code">SCC.450 · 2025</span>
+            <span class="project-code">Clinical trials analytics · 2025</span>
             <h3>Neglected Tropical Disease Clinical Trials Analysis</h3>
             <p>
-              Led data cleaning for 315 WHO ICTRP trial records across 62 countries, then built regression, network, and visual analysis outputs.
+              Analysed how neglected tropical disease trials are distributed across sponsors, countries, and diseases using cleaned WHO ICTRP records.
             </p>
             <ul>
+              <li>315 trial records across 62 countries</li>
               <li>Clinical-trial geography and sponsor mapping</li>
-              <li>Sponsor-country-disease network analysis</li>
-              <li>Publication-quality visualisations</li>
+              <li>Logistic regression, network analysis, and publication-quality visualisations</li>
             </ul>
           </article>
 
           <article class="project-card reveal" data-accent="green">
-            <span class="project-code">SCC.451 · 2025</span>
+            <span class="project-code">Computer vision &amp; clustering · 2025</span>
             <h3>Image Classification &amp; Clustering Analysis</h3>
             <p>
-              Applied transfer learning and fine-tuning with ResNet50, DenseNet121, and DINOv2, plus clustering and PCA on climate data.
+              Compared deep visual representations and unsupervised methods to understand model performance across classification and climate-pattern analysis tasks.
             </p>
             <ul>
-              <li>Image classification pipelines</li>
-              <li>K-means and hierarchical clustering</li>
+              <li>ResNet50, DenseNet121, and DINOv2 fine-tuning</li>
+              <li>K-means, hierarchical clustering, and PCA</li>
               <li>Model evaluation and visual analysis</li>
             </ul>
           </article>
 
           <article class="project-card reveal" data-accent="red">
-            <span class="project-code">SCC.452 · 2025–2026</span>
+            <span class="project-code">Multi-agent LLM simulation · 2025-2026</span>
             <h3>Diversity Beats Strength?</h3>
             <p>
-              Implemented and configured multi-LLM simulations for GPT-4o, DeepSeek-V3, and Gemini-3-Flash across repeated strategic games.
+              Implemented controlled multi-LLM game-theory simulations to test whether mixed-agent teams can outperform stronger single-model teams.
             </p>
             <ul>
               <li>Approx. 6,400 trial simulations</li>
-              <li>Prisoner's Dilemma, Snowdrift, Stag Hunt</li>
-              <li>Cheap talk, memory, topology, team composition</li>
+              <li>GPT-4o, DeepSeek-V3, and Gemini-3-Flash agents</li>
+              <li>Cheap talk, memory, topology, and team-composition conditions</li>
             </ul>
           </article>
 
           <article class="project-card reveal" data-accent="violet">
-            <span class="project-code">SCC.453 · 2025</span>
+            <span class="project-code">Multilingual NLP · 2025</span>
             <h3>Sentiment Analysis across Multilingual Datasets</h3>
             <p>
-              Compared tokenisation, stemming, and lemmatisation strategies for English and Chinese sentiment classification.
+              Tested how preprocessing decisions change sentiment-classification performance across English and Chinese text pipelines.
             </p>
             <ul>
               <li>Text preprocessing experiments</li>
@@ -153,10 +180,10 @@
           </article>
 
           <article class="project-card reveal" data-accent="steel">
-            <span class="project-code">Aston University · 2022–2024</span>
-            <h3>Software Systems</h3>
+            <span class="project-code">Prior software systems · 2022-2024</span>
+            <h3>Restaurant Admin &amp; PC Components E-Commerce Systems</h3>
             <p>
-              Built a restaurant back-office management system as a final-year individual project and a team-based PC components e-commerce website.
+              Delivered two applied software projects before specialising in AI: an individual restaurant back-office system and a team-built PC components sales website.
             </p>
             <ul>
               <li>Restaurant admin workflows</li>
@@ -226,6 +253,7 @@
           <h2 class="section-title">Open to AI research, engineering, and applied ML opportunities.</h2>
           <div class="contact-actions">
             <a class="button primary" href="mailto:zixuwang20@gmail.com">zixuwang20@gmail.com</a>
+            <a class="button secondary" href="https://github.com/ZXW200">GitHub</a>
             <a class="button secondary" href="CV_Zixu_Wang_updated.pdf">Download CV</a>
           </div>
         </div>
