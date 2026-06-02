@@ -8,11 +8,16 @@
       name="description"
       content="Zixu Wang, MSc Artificial Intelligence at Lancaster University. Research and projects in explainable AI, multi-agent LLMs, NLP, machine learning, and medical AI."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="photo-backdrop" aria-hidden="true"></div>
-    <canvas id="signal-canvas" aria-hidden="true"></canvas>
 
     <header class="site-header" aria-label="Primary">
       <a class="brand" href="#top" aria-label="Zixu Wang home">ZW</a>
@@ -32,6 +37,7 @@
 
     <main id="top">
       <section class="hero scene">
+        <div class="hero-fx" aria-hidden="true"></div>
         <div class="hero-copy">
           <p class="kicker reveal">MSc Artificial Intelligence</p>
           <h1 class="hero-title reveal">Zixu Wang</h1>
@@ -46,33 +52,24 @@
             <a class="button secondary" href="Zixu_Wang_CV_EN.pdf">Download CV</a>
           </div>
         </div>
-        <div class="hero-visual reveal" aria-label="Interactive AI profile summary">
-          <div class="hologram-shell">
-            <div class="hologram-grid" aria-hidden="true"></div>
-            <div class="hologram-ring ring-one" aria-hidden="true"></div>
-            <div class="hologram-ring ring-two" aria-hidden="true"></div>
-            <div class="hologram-ring ring-three" aria-hidden="true"></div>
-            <div class="core-panel">
-              <img class="profile-photo" src="assets/zixu-wang-profile.jpg" alt="Portrait of Zixu Wang" />
-              <div class="core-readout">
-                <span>PROFILE</span>
-                <strong>Zixu Wang</strong>
-              </div>
-            </div>
-            <div class="floating-card card-a">
-              <span>Current</span>
-              <strong>Lancaster University</strong>
-            </div>
-            <div class="floating-card card-b">
-              <span>Focus</span>
-              <strong>XAI · Medical AI · LLM agents</strong>
-            </div>
-            <div class="floating-card card-c">
-              <span>Signal</span>
-              <strong>79.4% distinction average</strong>
-            </div>
-            <div class="scanline" aria-hidden="true"></div>
+        <div class="hero-visual reveal" aria-label="Profile summary">
+          <div class="portrait-frame">
+            <img class="portrait-photo" src="assets/zixu-wang-profile.jpg" alt="Portrait of Zixu Wang" />
           </div>
+          <dl class="hero-stats">
+            <div>
+              <dt>Current</dt>
+              <dd>Lancaster University</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>XAI · Medical AI · LLM agents</dd>
+            </div>
+            <div>
+              <dt>Signal</dt>
+              <dd>79.4% distinction average</dd>
+            </div>
+          </dl>
         </div>
       </section>
 
@@ -323,6 +320,8 @@
       </section>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
