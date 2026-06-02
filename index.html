@@ -46,19 +46,32 @@
             <a class="button secondary" href="CV_Zixu_Wang_updated.pdf">Download CV</a>
           </div>
         </div>
-        <div class="hero-panel" aria-label="Profile summary">
-          <img class="profile-photo" src="assets/zixu-wang-profile.jpg" alt="Portrait of Zixu Wang" />
-          <div class="panel-line">
-            <span>Current</span>
-            <strong>Lancaster University</strong>
-          </div>
-          <div class="panel-line">
-            <span>Focus</span>
-            <strong>AI agents · XAI · Medical AI</strong>
-          </div>
-          <div class="panel-line">
-            <span>Signal</span>
-            <strong>79.4% distinction average-to-date</strong>
+        <div class="hero-visual reveal" aria-label="Interactive AI profile summary">
+          <div class="hologram-shell">
+            <div class="hologram-grid" aria-hidden="true"></div>
+            <div class="hologram-ring ring-one" aria-hidden="true"></div>
+            <div class="hologram-ring ring-two" aria-hidden="true"></div>
+            <div class="hologram-ring ring-three" aria-hidden="true"></div>
+            <div class="core-panel">
+              <img class="profile-photo" src="assets/zixu-wang-profile.jpg" alt="Portrait of Zixu Wang" />
+              <div class="core-readout">
+                <span>PROFILE</span>
+                <strong>Zixu Wang</strong>
+              </div>
+            </div>
+            <div class="floating-card card-a">
+              <span>Current</span>
+              <strong>Lancaster University</strong>
+            </div>
+            <div class="floating-card card-b">
+              <span>Focus</span>
+              <strong>XAI · Medical AI · LLM agents</strong>
+            </div>
+            <div class="floating-card card-c">
+              <span>Signal</span>
+              <strong>79.4% distinction average</strong>
+            </div>
+            <div class="scanline" aria-hidden="true"></div>
           </div>
         </div>
       </section>
@@ -72,18 +85,64 @@
               My MSc dissertation turns facial model behaviour into region-level evidence, using a coarse-ROI Anatomical Evidence Vector pipeline for explainable facial phenotyping.
             </p>
           </div>
-          <div class="story-metrics reveal">
-            <div>
-              <span>Data</span>
-              <strong>Face2Brain / PD-DBS</strong>
+          <div class="story-console reveal" aria-label="Explainable AI workflow preview">
+            <div class="console-topbar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <strong>AEV pipeline</strong>
             </div>
-            <div>
-              <span>Method</span>
-              <strong>Occlusion AEV</strong>
+            <div class="console-viewport">
+              <div class="face-map" aria-hidden="true">
+                <div class="face-outline"></div>
+                <span class="roi roi-eye"></span>
+                <span class="roi roi-nose"></span>
+                <span class="roi roi-mouth"></span>
+                <span class="roi roi-jaw"></span>
+              </div>
+              <div class="console-lines" aria-hidden="true">
+                <span style="--w: 86%"></span>
+                <span style="--w: 62%"></span>
+                <span style="--w: 74%"></span>
+                <span style="--w: 48%"></span>
+              </div>
+              <div class="console-panel">
+                <span class="panel-label">Active stage</span>
+                <strong id="story-active-title">Structure</strong>
+                <p id="story-active-copy">Clean data, align regions, and build a reproducible experiment path.</p>
+              </div>
             </div>
-            <div>
-              <span>Output</span>
-              <strong>Auditable evidence</strong>
+            <div class="story-steps" aria-hidden="true">
+              <div class="story-step active" data-title="Structure" data-copy="Clean data, align regions, and build a reproducible experiment path.">
+                <span>01</span>
+                <strong>Structure</strong>
+              </div>
+              <div class="story-step" data-title="Perturb" data-copy="Mask coarse facial regions and observe how model behaviour changes.">
+                <span>02</span>
+                <strong>Perturb</strong>
+              </div>
+              <div class="story-step" data-title="Measure" data-copy="Convert occlusion effects into anatomical evidence vectors and statistics.">
+                <span>03</span>
+                <strong>Measure</strong>
+              </div>
+              <div class="story-step" data-title="Audit" data-copy="Check calibration, leakage, confounding, and robustness before drawing claims.">
+                <span>04</span>
+                <strong>Audit</strong>
+              </div>
+            </div>
+            <div class="story-metrics">
+              <div>
+                <span>Data</span>
+                <strong>Face2Brain / PD-DBS</strong>
+              </div>
+              <div>
+                <span>Method</span>
+                <strong>Occlusion AEV</strong>
+              </div>
+              <div>
+                <span>Output</span>
+                <strong>Auditable evidence</strong>
+              </div>
             </div>
           </div>
         </div>
