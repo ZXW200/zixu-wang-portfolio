@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="photo-backdrop" aria-hidden="true"></div>
-
     <header class="site-header" aria-label="Primary">
       <a class="brand" href="#top" aria-label="Zixu Wang home">ZW</a>
       <nav class="nav-links" aria-label="Page navigation">
@@ -37,7 +35,6 @@
 
     <main id="top">
       <section class="hero scene">
-        <div class="hero-fx" aria-hidden="true"></div>
         <div class="hero-copy">
           <p class="kicker reveal">MSc Artificial Intelligence</p>
           <h1 class="hero-title reveal">Zixu Wang</h1>
@@ -51,12 +48,7 @@
             <a class="button secondary" href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">LinkedIn</a>
             <a class="button secondary" href="Zixu_Wang_CV_EN.pdf">Download CV</a>
           </div>
-        </div>
-        <div class="hero-visual reveal" aria-label="Profile summary">
-          <div class="portrait-frame">
-            <img class="portrait-photo" src="assets/zixu-wang-profile.jpg" alt="Portrait of Zixu Wang" />
-          </div>
-          <dl class="hero-stats">
+          <dl class="hero-stats reveal">
             <div>
               <dt>Current</dt>
               <dd>Lancaster University</dd>
@@ -70,6 +62,12 @@
               <dd>79.4% distinction average</dd>
             </div>
           </dl>
+        </div>
+        <div class="hero-visual reveal" aria-label="Profile">
+          <div class="hero-orb" aria-hidden="true"></div>
+          <div class="hero-portrait">
+            <img src="assets/zixu-wang-profile.jpg" alt="Portrait of Zixu Wang" />
+          </div>
         </div>
       </section>
 
@@ -321,7 +319,6 @@
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
