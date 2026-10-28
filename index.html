@@ -6,7 +6,7 @@
     <title>Zixu Wang | AI Portfolio</title>
     <meta
       name="description"
-      content="Zixu Wang, MSc Artificial Intelligence at Lancaster University (79.4% distinction). Research in explainable medical AI, multi-agent LLMs, NLP, and machine learning."
+      content="Zixu Wang, MSc AI candidate at Lancaster University, seeking AI/ML engineering roles. Python and PyTorch projects in medical imaging, ECG and LLM evaluation; first-author PRCV 2026 paper."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,6 +21,7 @@
       <a class="brand" href="#top" aria-label="Zixu Wang home">ZW</a>
       <nav class="nav-links" aria-label="Page navigation">
         <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
         <a href="#work">Work</a>
         <a href="#systems">Systems</a>
         <a href="#skills">Skills</a>
@@ -29,7 +30,7 @@
       <div class="nav-actions">
         <a class="nav-action" href="https://github.com/ZXW200" target="_blank" rel="noopener">GitHub</a>
         <a class="nav-action" href="https://www.linkedin.com/in/zixu-wang-9b146a39a/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="nav-action" href="Zixu_Wang_CV_EN.pdf">CV</a>
+        <a class="nav-action" href="Zixu_Wang_CV_EN.pdf?v=20261028">CV</a>
       </div>
     </header>
 
@@ -39,27 +40,28 @@
           <p class="kicker reveal">MSc Artificial Intelligence</p>
           <h1 class="hero-title reveal">Zixu Wang</h1>
           <p class="hero-subtitle reveal">
-            MSc AI at Lancaster (79.4% distinction), working on explainable, multimodal and agentic AI.
-            I turn model behaviour into auditable, statistically validated evidence — across explainable medical AI, multi-agent LLM systems and NLP — and have led research teams of up to five.
+            I build machine learning workflows with Python and PyTorch, from data preparation to model training, evaluation and explainability.
+            MSc AI candidate at Lancaster and first author of a PRCV 2026 paper, seeking AI/ML engineering roles.
           </p>
           <div class="hero-actions reveal">
             <a class="button primary" href="#work">View Work</a>
             <a class="button secondary" href="https://github.com/ZXW200" target="_blank" rel="noopener">GitHub</a>
             <a class="button secondary" href="https://www.linkedin.com/in/zixu-wang-9b146a39a/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="button secondary" href="Zixu_Wang_CV_EN.pdf">Download CV</a>
+            <a class="button secondary" href="Zixu_Wang_CV_EN.pdf?v=20261028">CV · English</a>
+            <a class="button secondary" href="Wang_Zixu_CV_CN.pdf?v=20261028" lang="zh-CN">简历 · 中文</a>
           </div>
           <dl class="hero-stats reveal">
             <div>
-              <dt>Current</dt>
+              <dt>Education</dt>
               <dd>Lancaster · MSc AI</dd>
             </div>
             <div>
-              <dt>Signal</dt>
-              <dd>79.4% distinction average</dd>
+              <dt>Publication</dt>
+              <dd>PRCV 2026 · First author</dd>
             </div>
             <div>
-              <dt>Leadership</dt>
-              <dd>Led research teams of up to 5</dd>
+              <dt>Core stack</dt>
+              <dd>Python · PyTorch · SQL</dd>
             </div>
           </dl>
         </div>
@@ -77,7 +79,8 @@
             <p class="kicker reveal">Research direction</p>
             <h2 class="section-title reveal">From predictions to inspectable evidence.</h2>
             <p class="large-text reveal">
-              My MSc dissertation turns facial model behaviour into region-level evidence, using a coarse-ROI Anatomical Evidence Vector pipeline for explainable facial phenotyping.
+              My MSc dissertation developed an eight-region occlusion audit on 2,343 low-resolution PD-DBS facial images.
+              Anatomical Evidence Vectors quantify classifier sensitivity, with checks for image similarity, confidence, ROI geometry and explanation-method agreement.
             </p>
           </div>
           <div class="story-console reveal" aria-label="Explainable AI workflow preview">
@@ -104,23 +107,23 @@
               <div class="console-panel">
                 <span class="panel-label">Active stage</span>
                 <strong id="story-active-title">Structure</strong>
-                <p id="story-active-copy">Clean data, align regions, and build a reproducible experiment path.</p>
+                <p id="story-active-copy">Quality-check 2,343 images and preserve the supplied train/test split.</p>
               </div>
             </div>
             <div class="story-steps" aria-hidden="true">
-              <div class="story-step active" data-title="Structure" data-copy="Clean data, align regions, and build a reproducible experiment path.">
+              <div class="story-step active" data-title="Structure" data-copy="Quality-check 2,343 images and preserve the supplied train/test split.">
                 <span>01</span>
                 <strong>Structure</strong>
               </div>
-              <div class="story-step" data-title="Perturb" data-copy="Mask coarse facial regions and observe how model behaviour changes.">
+              <div class="story-step" data-title="Perturb" data-copy="Occlude each of eight facial regions with training-set mean pixels.">
                 <span>02</span>
                 <strong>Perturb</strong>
               </div>
-              <div class="story-step" data-title="Measure" data-copy="Convert occlusion effects into anatomical evidence vectors and statistics.">
+              <div class="story-step" data-title="Measure" data-copy="Measure true-class confidence drops and compare regional contrasts with FDR correction.">
                 <span>03</span>
                 <strong>Measure</strong>
               </div>
-              <div class="story-step" data-title="Audit" data-copy="Check calibration, leakage, confounding, and robustness before drawing claims.">
+              <div class="story-step" data-title="Audit" data-copy="Evaluate calibration, similarity filtering, atlas geometry, spatial permutation and Grad-CAM agreement.">
                 <span>04</span>
                 <strong>Audit</strong>
               </div>
@@ -128,15 +131,15 @@
             <div class="story-metrics">
               <div>
                 <span>Data</span>
-                <strong>Face2Brain / PD-DBS</strong>
+                <strong>2,343 PD-DBS images</strong>
               </div>
               <div>
                 <span>Method</span>
-                <strong>Occlusion AEV</strong>
+                <strong>Eight-region AEV</strong>
               </div>
               <div>
                 <span>Output</span>
-                <strong>Auditable evidence</strong>
+                <strong>Regional sensitivity audit</strong>
               </div>
             </div>
           </div>
@@ -150,10 +153,11 @@
         </div>
         <div class="education-grid">
           <article class="education-card reveal">
-            <span>2025-2026</span>
+            <span>Oct 2025 – Sep 2026</span>
             <h3>MSc Artificial Intelligence</h3>
             <p>Lancaster University</p>
-            <strong>79.4% distinction average-to-date</strong>
+            <strong>Expected Distinction · Formal award pending</strong>
+            <p class="education-note">Dissertation: 75/100</p>
           </article>
           <article class="education-card reveal">
             <span>2021-2024</span>
@@ -162,6 +166,20 @@
             <strong>Second Class Honours, Lower Division</strong>
           </article>
         </div>
+      </section>
+
+      <section id="publications" class="publications-section scene" aria-labelledby="publications-title">
+        <div class="section-heading reveal">
+          <p class="kicker">Publication</p>
+          <h2 class="section-title" id="publications-title">Auditing what medical AI learns.</h2>
+        </div>
+        <article class="publication-entry reveal">
+          <p class="publication-venue">PRCV 2026 · First author</p>
+          <h3>How Far Can a Single Lead Go? A Construct-Validity Audit of ICD-Based ECG Benchmarks on 54,357 MIMIC-IV Patients</h3>
+          <p class="publication-authors"><strong>Zixu Wang</strong>, Richard Jiang</p>
+          <p>Benchmarked six model families on 54,357 MIMIC-IV patients using patient-level splits. The audit combined no-ECG baselines, age-stratified evaluation, label sensitivity and zero-shot transfer to PTB-XL.</p>
+          <p>A no-ECG baseline reached AUC 0.816, compared with 0.800 for the best ECG model on the composite ICD target. Within age strata 50–79, ECG models exceeded the no-ECG baseline by 0.05–0.07 AUC, showing how aggregate and within-stratum comparisons differ.</p>
+        </article>
       </section>
 
       <section id="work" class="work-section">
@@ -173,32 +191,24 @@
         <div class="project-grid">
           <article class="project-card reveal" data-accent="cyan">
             <span class="project-code">MSc dissertation · 2026 · Sole researcher</span>
-            <h3>Toward Explainable Face2Gene Diagnosis</h3>
+            <h3>Region-Level Explainability on PD-DBS Facial Images</h3>
             <p>
-              As sole researcher, building a reproducible coarse-ROI AEV pipeline so facial-diagnosis model behaviour can be inspected at region level instead of treated as a black-box score.
+              Developed and evaluated an eight-region Anatomical Evidence Vector pipeline for auditing pre-/post-DBS image classification within the Explainable Face2Gene Diagnosis project.
             </p>
             <ul>
-              <li>NumPy MLP workflow on Face2Brain / PD-DBS face data</li>
-              <li>QC, calibration, ROI masking, FDR-corrected statistics</li>
-              <li>Leakage/confounding audits and robustness checks</li>
+              <li>2,343 grayscale 32×32 images; NumPy MLP and compact CNN</li>
+              <li>Test AUROC 0.9824; 0.9337 on the similarity-filtered subset (maximum train-cosine 0.98; n = 310)</li>
+              <li>Four regional contrasts retained after confidence matching and FDR correction</li>
+              <li>Right cheek/zygomatic ranked first by balanced accuracy in 10 of 11 atlas variants</li>
             </ul>
-          </article>
-
-          <article class="project-card reveal" data-accent="red">
-            <span class="project-code">Multi-agent LLM · Team lead (4–5) · 86%</span>
-            <h3>Diversity Beats Strength?</h3>
-            <p>
-              Led a 4–5 person team running controlled multi-LLM game-theory simulations to test whether diverse mixed-agent teams outperform stronger single-model teams.
-            </p>
-            <ul>
-              <li>Approx. 6,400 trial simulations</li>
-              <li>GPT-4o, DeepSeek-V3, and Gemini-3-Flash agents</li>
-              <li>Cheap talk, memory, topology, and team-composition conditions</li>
-            </ul>
+            <details class="thesis-details">
+              <summary>Full dissertation title</summary>
+              <p>Region-Level Explainability within the Explainable Face2Gene Diagnosis Project: A Coarse-ROI Occlusion Audit on Low-Resolution PD-DBS Facial Images</p>
+            </details>
           </article>
 
           <article class="project-card reveal" data-accent="amber">
-            <span class="project-code">Clinical trials analytics · Team lead (2–3) · 77.5%</span>
+            <span class="project-code">Clinical trials analytics · Team lead (2–3)</span>
             <h3>Neglected Tropical Disease Clinical Trials Analysis</h3>
             <p>
               Led a 2–3 person team analysing how neglected tropical disease trials are distributed across sponsors, countries, and diseases using cleaned WHO ICTRP records.
@@ -220,6 +230,19 @@
               <li>ResNet50, DenseNet121, and DINOv2 fine-tuning</li>
               <li>K-means, hierarchical clustering, and PCA</li>
               <li>Model evaluation and visual analysis</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-accent="red">
+            <span class="project-code">Multi-agent LLM · Team lead (4–5)</span>
+            <h3>Diversity Beats Strength?</h3>
+            <p>
+              Led a 4–5 person team running controlled multi-LLM game-theory simulations to test whether diverse mixed-agent teams outperform stronger single-model teams.
+            </p>
+            <ul>
+              <li>Approx. 6,400 trial simulations</li>
+              <li>GPT-4o, DeepSeek-V3, and Gemini-3-Flash agents</li>
+              <li>Cheap talk, memory, topology, and team-composition conditions</li>
             </ul>
           </article>
 
@@ -254,7 +277,7 @@
       <section id="systems" class="systems-section scene">
         <div class="section-heading reveal">
           <p class="kicker">Systems view</p>
-          <h2 class="section-title">A workflow built around evidence, not just outputs.</h2>
+          <h2 class="section-title">A workflow built around testable evidence.</h2>
         </div>
         <div class="pipeline" aria-label="AI workflow">
           <div class="pipeline-step reveal">
@@ -287,7 +310,7 @@
           </div>
           <div class="skill-band reveal">
             <span>ML / DL</span>
-            <p>PyTorch · scikit-learn · NumPy MLPs · transfer learning · clustering · classification · model evaluation</p>
+            <p>PyTorch · scikit-learn · NumPy MLPs · CNNs · transfer learning · clustering · ECG analysis</p>
           </div>
           <div class="skill-band reveal">
             <span>NLP / LLMs</span>
@@ -295,7 +318,7 @@
           </div>
           <div class="skill-band reveal">
             <span>Data / XAI</span>
-            <p>pandas · NumPy · matplotlib · seaborn · NetworkX · occlusion analysis · calibration · AUROC/AUPRC</p>
+            <p>pandas · NumPy · matplotlib · seaborn · NetworkX · occlusion analysis · Grad-CAM · calibration · AUROC/AUPRC · FDR correction</p>
           </div>
           <div class="skill-band reveal">
             <span>Tools</span>
@@ -307,12 +330,13 @@
       <section id="contact" class="contact-section scene">
         <div class="contact-copy reveal">
           <p class="kicker">Contact</p>
-          <h2 class="section-title">Open to research collaboration in explainable, multimodal, and agentic AI.</h2>
+          <h2 class="section-title">Seeking AI and machine learning engineering roles.</h2>
           <div class="contact-actions">
-            <a class="button primary" href="mailto:zixuwang20@gmail.com">zixuwang20@gmail.com</a>
+            <a class="button primary" href="mailto:wangzixu0831@foxmail.com">wangzixu0831@foxmail.com</a>
             <a class="button secondary" href="https://github.com/ZXW200" target="_blank" rel="noopener">GitHub</a>
             <a class="button secondary" href="https://www.linkedin.com/in/zixu-wang-9b146a39a/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="button secondary" href="Zixu_Wang_CV_EN.pdf">Download CV</a>
+            <a class="button secondary" href="Zixu_Wang_CV_EN.pdf?v=20261028">CV · English</a>
+            <a class="button secondary" href="Wang_Zixu_CV_CN.pdf?v=20261028" lang="zh-CN">简历 · 中文</a>
           </div>
         </div>
       </section>

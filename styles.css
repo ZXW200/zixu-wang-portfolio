@@ -576,6 +576,7 @@ main {
 }
 
 .education-section,
+.publications-section,
 .work-section,
 .systems-section,
 .skills-section,
@@ -618,6 +619,57 @@ main {
 .education-card strong {
   color: var(--accent);
   font-size: 0.96rem;
+}
+
+.education-card .education-note {
+  margin: 12px 0 0;
+}
+
+.publication-entry {
+  max-width: 1000px;
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.publication-venue {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.publication-entry h3 {
+  margin: 16px 0;
+  font-size: 1.65rem;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.publication-entry p {
+  line-height: 1.65;
+}
+
+.publication-authors {
+  color: var(--muted);
+}
+
+.thesis-details {
+  position: relative;
+  z-index: 1;
+  margin-top: 22px;
+  font-size: 0.9rem;
+}
+
+.thesis-details summary {
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.thesis-details p {
+  margin-bottom: 0;
+}
+
+section[id] {
+  scroll-margin-top: 100px;
 }
 
 .project-grid {
@@ -838,6 +890,10 @@ main {
 
   .hero-visual {
     width: min(100%, 360px);
+  }
+
+  .hero-orb {
+    inset: -9%;
   }
 
   .section-title {
